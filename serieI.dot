@@ -1,0 +1,17 @@
+digraph G{
+label="SERIE I"
+labelloc="t"
+node [shape=rectangle]
+rank= same{1->2}
+rank= same{2->1}
+1->22->33;
+2->55->77;
+
+77->55->2;
+33->22->1;
+
+rank= same{22->55}
+rank= same{55->22}
+rank= same{33->77}
+rank= same{77->33}
+}
